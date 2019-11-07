@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript - DATA Type</title>
+    <script type="text/javascript">
+      var primitiveNumber = 123;
+      var objectiveNumber = new Number(123);
+      var stringNumber = '123';
+
+      // primitiveNumber.method = function () {
+      //   return 'Primitive Method';
+      // };
+      // var output = '';
+      // output += primitiveNumber.method() + '\n';
+      // alert(output);
+
+      Number.prototype.method = function () {
+        return 'Method on Prototype';
+      }
+
+      var output = '';
+      output += primitiveNumber.method() + '\n';
+      output +=objectiveNumber.method();
+
+      output += typeof(primitiveNumber) + ' : ' + primitiveNumber + '\n';
+      output += typeof(objectiveNumber) + ' : ' + objectiveNumber + '\n';
+      output += typeof(stringNumber) + ' : ' + stringNumber;
+
+
+      alert(output);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
