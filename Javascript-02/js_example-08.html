@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Function & Command</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      "use script"
+
+      try {
+        console.log(age);
+      } catch (err) {
+          console.log(err.message);
+      }
+
+      console.log("name = ", name);
+      var name = "Jovan";
+      console.log("name = ", name);
+
+
+      console.log(plus(10,20));
+      try {
+        console.log(plus2(10,20));
+      } catch (err) {
+        console.log(err.message);
+      }
+
+      function plus(a,b) {
+        return a + b;
+      }
+
+      var plus3 = plus;
+
+      var plus2 = function(a,b){
+        return a + b;
+      }
+
+
+      console.log(plus(20,30));
+      console.log(plus2(20,30,40));
+      console.log(plus3(20,30,50));
+
+      function xxx(a,b,c,d) {
+        return a * b * c * d;
+      }
+      var xxx = xxx;
+
+      console.log(xxx(2,3,4,5));
+
+
+
+    </script>
+  </body>
+</html>
