@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript - Object</title>
+    <script type="text/javascript">
+      /*
+      *Object - property, method
+      *method
+      * - constructor(), hasOwnProperty(name), isPrototypeof(object),
+      * propertyIsEnumerable(name), toLocalString(), toString(), valueof()
+      */
+
+      //var object = new Object();
+      var student = {
+        name: 'Jovan',
+        age: 19,
+        toString: function () {
+          return this.name + ' : ' + this.age;
+        }
+      };
+
+      alert(student);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
