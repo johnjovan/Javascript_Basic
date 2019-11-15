@@ -18,23 +18,31 @@
 
     <div id="d2">
       <div id="d22">
-        <h1 id="header03" class="c2">TEST 1</h1>
+        <h1 id="header03" class="c2">TEST 3</h1>
         <p class="c2">TEST....03</p>
         <h1 id="header04">TEST 4</h1>
         <p>TEST....04</p>
       </div>
     </div>
+    <script type="text/javascript">
+      "use strict"
+      // getElementById(id)
+      var e1 = document.getElementById('header02');
+      console.log(e1.innerHTML); // TEST 2
 
-    <script>
-  // Test 01
-      var e1 = document.getElementById('header01');
-      console.log(e1.innerHTML);
+      console.log(document.getElementById('header03').innerHTML);
 
-      var changeText = prompt('insert text here!');
-      e1.innerHTML = changeText;
+      var e4 = document.getElementById('header04');
+      var text = 'Hello Good Morning!';
+      console.log(e4.innerHTML = text);
 
-      var tx1 = document.createTextNode('Okay');
-      e1.appendChild(tx1);
+      var text2 = prompt('insert Text!!');
+      e1.innerHTML = text2;
+
+
+
     </script>
+
+
   </body>
 </html>
