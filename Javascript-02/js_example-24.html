@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM API - Add Element Attribute</title>
+  </head>
+  <body>
+    <h1>DOM API - Add Element Attribute</h1>
+    <script type="text/javascript">
+      "use strict"
+
+
+      // create img tag
+      var img1 = document.createElement('img');
+      document.body.appendChild(img1);
+
+      // img.src = 'visual-reverse.jpg';
+      // imgtest['src'] = 'visual-reverse.jpg';
+      img1.src = 'visual.jpg';
+
+      // setAttribute('src', 'name of image.jpg')
+      var img2 = document.createElement('img');
+      document.body.appendChild(img2);
+      img2.setAttribute('src','visual.jpg');
+      img2.setAttribute('data-number',20191115);
+
+      img1.onmouseover = function () {
+        // prompt('Hello');
+      }
+
+      img2.onclick = function () {
+        // alert('Bye!!!');
+        location.href = "http://ittc.kr";
+      }
+
+
+
+    </script>
+  </body>
+</html>
